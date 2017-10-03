@@ -9,22 +9,19 @@ package model;
  *
  * @author user
  */
-public class Nasabah {
+public class Nasabah extends Cicilan{
     private String Nama;
     private Integer Umur;
      private String alamat;
     private String Status;
 
-    public Nasabah(String Nama, Integer Umur, String alamat, String Status) {
+    public Nasabah(String Nama, Integer Umur, String alamat, String Status, int jumlahTanggungan, double gajiPokok, double penghasilanTambahan, double bonus, String namabarang, double harga, double uangMuka, double bunga, int bulan) {
+        super(jumlahTanggungan, gajiPokok, penghasilanTambahan, bonus, namabarang, harga, uangMuka, bunga, bulan);
         this.Nama = Nama;
         this.Umur = Umur;
         this.alamat = alamat;
         this.Status = Status;
     }
-   
-
-    
-
     /**
      * @return the Nama
      */

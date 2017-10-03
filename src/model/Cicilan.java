@@ -29,6 +29,10 @@ public class Cicilan {
     double bungaCicilan;
     private boolean isApprove;
 
+    public Cicilan() {
+    }
+
+    
     public Cicilan(int jumlahTanggungan, double gajiPokok, double penghasilanTambahan, double bonus, String namabarang, double harga, double uangMuka, double bunga, int bulan) {
         this.jumlahTanggungan = jumlahTanggungan;
         this.gajiPokok = gajiPokok;
